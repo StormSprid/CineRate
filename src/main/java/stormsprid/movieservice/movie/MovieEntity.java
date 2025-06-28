@@ -23,7 +23,7 @@ public class MovieEntity {
     private Integer year;
     private String genre;
     @ElementCollection(fetch = FetchType.EAGER)//отдельная таблица для актеров
-    @Table(name="actors")
+
     List<String> actors;
     String posterUrl;
 
